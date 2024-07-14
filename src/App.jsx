@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './components/Navbar/Navbar'
 import Add from './pages/Add/Add'
 import Sidebar from './components/Sidebar/Sidebar'
@@ -9,6 +11,7 @@ import Orders from './pages/Orders/Orders'
 const App = () => {
   return (
     <div>
+      <ToastContainer/>
       <Navbar/>
       <hr />
       <div className="app-content">
