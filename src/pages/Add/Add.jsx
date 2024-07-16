@@ -1,11 +1,12 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import "./Add.css";
 import { assets } from "../../assets/assets";
 import axios from 'axios'
 import { toast } from "react-toastify";
-const Add = () => {
-  const url="http://localhost:4000"
+const Add = ({url}) => {
+
   const [image, setimage] = useState(false);
   const [data, setdata] = useState({
     name: "",
